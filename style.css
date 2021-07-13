@@ -1,0 +1,202 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #faf8f8;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+#welcome {
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#welcome h1 {
+    font-size: 36px;
+}
+
+#welcome h2 {
+    font-weight: 300;
+}
+
+#welcome p {
+    text-align: left;
+}
+
+#welcome ol {
+    text-align: left;
+}
+
+#welcome li {
+    margin-top: 5px;
+}
+
+#dropdown {
+    margin-top: 50px;
+}
+
+label {
+    font-size: 20px;
+}
+
+select {
+    background-color: #dedcec;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+}
+
+option {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #dedcec;
+    font-size: 16px;
+}
+
+#startbutton {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    width: 160px;
+    height: 80px;
+}
+
+
+/* part 2: overview */
+
+#overview {
+    display: none;
+}
+
+#obuttons {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    margin: 0 auto 70px;
+}
+
+
+
+
+/* part 3: video interface */
+
+#video-interface {
+    display: none;
+}
+
+.header {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+#whichpart {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    margin: -10px 5px;
+}
+
+#count {
+    text-align: center;
+    font-weight: 300;
+}
+
+#clipnum {
+    font-weight: 300;
+}
+
+#reminder {
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+}
+
+#reminder a {
+    font-weight: 400;
+}
+
+video {
+    display: block;
+    text-align: center;
+    margin: -50px auto 0px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    margin: 0 auto 70px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0px 10px 20px #ddd;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    margin: 10px auto;
+    background-color: #dedcec;
+    transition: all 1s;
+}
+
+button:hover {
+    background-color: #cfcaec;
+    box-shadow: 0px 10px 20px #ccc;
+    cursor: pointer;
+}
+
+#playbutton {
+    font-weight: 600;
+}
+
+.finish {
+    background-color: #a9e6c0;
+    font-weight: 700;
+}
+
+.finish:hover {
+    background-color: #98e4b5;
+    box-shadow: 0px 10px 20px #ccc;
+    cursor: pointer;
+}
+
+#finished {
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    width: 600px;
+    margin: 50px auto;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer h4 {
+    font-weight: 600;
+    font-size: 14px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Annotations</title>
+</head>
+<body>
+    <div id="welcome">
+        <h1>Welcome!</h1>
+        <h2>Thank you for taking part in our study.</h2>
+        <ol>
+            <li>Open the Google Form found <a href="https://forms.gle/qG7yjQNUM3g6WWF58" target="_blank">here</a></li>
+            <li>Select which part of the video you will be annotating in the field below on this page, and in the first question on the Google Form</li>
+            <li>Watch the full 30 second part for an overview</li>
+            <li>Watch and annotate the clips at one-second intervals
+                <ul>
+                    <li>Press "Play" to watch each clip as many times as you would like</li>
+                    <li>On the Google Form, list the words associate with the clip, separated by commas in the specified field (ensure the question matches the clip number)</li>
+                    <li>Press "Next" to go to the next clip, and "Back" to go to the previous clip</li>
+                    <li>After all clips are watched and annotated, press "Finish"</li>
+                </ul>
+            </li>
+            <li>Submit the Google Form</li>
+        </ol>
+        <div id="dropdown">
+            <label for="parts">Select your assigned part: &nbsp;</label>
+            <select name="parts" id="parts" onchange="recordNew()">
+                <option value="1">Part 1</option>
+                <option value="2">Part 2</option>
+                <option value="3">Part 3</option>
+                <option value="4">Part 4</option>
+                <option value="5">Part 5</option>
+                <option value="6">Part 6</option>
+                <option value="7">Part 7</option>
+                <option value="8">Part 8</option>
+                <option value="9">Part 9</option>
+                <option value="10">Part 10</option>
+                <option value="11">Part 11</option>
+                <option value="12">Part 12</option>
+                <option value="13">Part 13</option>
+                <option value="14">Part 14</option>
+            </select>
+        </div>
+        <button id="startbutton" class="finish">Start</button>
+    </div>
+    <div id="overview">
+        <h1 class="header">Overview</h1>
+        <video id="ovideo" width="640" height="480">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="obuttons">
+            <button id="oplaybutton">Play</button>
+            <button id="onextbutton" class="finish">Next Step</button>
+        </div>
+    </div>
+    <div id="video-interface">
+        <h1 class="header">Annotations</h1>
+        <h3 id="reminder">In case you forgot, click <a href="https://forms.gle/qG7yjQNUM3g6WWF58" target="_blank">here</a> to go to the Google Form</h3>
+        <h2 id="whichpart">N/A</h2>
+        <h2 id="count">Clip <a id="clipnum">1</a> of 30</h1>
+        <video id="video" width="640" height="480" muted>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div id="buttons">
+            <button id="backbutton">Back</button>
+            <button id="playbutton">Play</button>
+            <button id="nextbutton">Next</button>
+        </div>
+
+        <div id="finished">
+            <p>
+                Thank you for taking part in this study. Please ensure you have answered every question in the Google Form and have thoughtfully annotated every clip in this video.
+            </p>
+            <p>
+                If you would like to go back and rewatch the clips, please click the button below.
+            </p>
+
+            <button id="restart">Go Back</button>
+        </div>
+    </div>
+    <footer>
+        <h3>Will Zahary Henderson © 2021</h3>
+        <h4><a href="https://www.headspacestudios.org" target="_blank">Lab</a>&emsp;⯁&emsp;<a href="https://pubmed.ncbi.nlm.nih.gov/30217543/" target="_blank">Video Source</a></h4>
+    </footer>
+      <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
